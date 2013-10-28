@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>cn.com.sunjiesh</groupId>
+		<artifactId>utils-parent</artifactId>
+		<version>0.1-SNAPSHOT</version>
+		<relativePath>../../</relativePath>
+	</parent>
+	<artifactId>utils-security</artifactId>
+	<packaging>jar</packaging>
+	<name>utils-security</name>
+	<url>http://maven.apache.org</url>
+	
+	
+	
+	<properties>
+		<struts.version>2.1.6</struts.version>
+		<hibernate.version>4.1.1.Final</hibernate.version>
+		<spring.version>3.1.1.RELEASE</spring.version>
+		<slf4j.version>1.6.4</slf4j.version>
+		<utils.version>0.1-SNAPSHOT</utils.version>
+	</properties>
+	
+	<repositories>
+		<repository>
+		  <id>my.mvn.repo</id>
+		  <url>https://github.com/sunjiesh/mvn-repo/raw/master</url>
+		  <!-- use snapshot version -->
+		  <snapshots>
+		     <enabled>true</enabled>
+		      <updatePolicy>always</updatePolicy>
+		   </snapshots>
+		</repository>
+	</repositories>
+		
+	
+	<dependencies>
+		<dependency>
+			<groupId>cn.com.sunjiesh</groupId>
+			<artifactId>utils</artifactId>
+			<version>${utils.version}</version>
+		</dependency>
+			
+		<!-- Spring Security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>jcifs</groupId>
+			<artifactId>jcifs</artifactId>
+			<version>1.3.17</version>
+		</dependency>
+            
+	</dependencies>
+</project>
