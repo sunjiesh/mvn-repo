@@ -27,11 +27,6 @@
 	<dependencies>
 		<dependency>
 			<groupId>cn.com.sunjiesh</groupId>
-			<artifactId>utils-core</artifactId>
-			<version>${utils.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>cn.com.sunjiesh</groupId>
 			<artifactId>utils-common</artifactId>
 			<version>${utils.version}</version>
 		</dependency>
