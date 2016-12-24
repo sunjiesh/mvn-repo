@@ -1,3 +1,3 @@
 mvn-repo
 ========
-MAVEN工具仓库
+項目MAVEN倉庫
